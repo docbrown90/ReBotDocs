@@ -21,17 +21,17 @@ This is the base for a combat rotation, I'll go over each part below.
         public class CustomRotation : CombatRotation
         {
             public CustomRotation()
-    		{
+            {
                 
-    		}
+            }
             public override bool OutOfCombat()
-		    {
-		        return false;
-		    }
+            {
+                return false;
+            }
             public override void Combat()
-		    {
+            {
 		    
-		    }
+            }
         }
     }
     
