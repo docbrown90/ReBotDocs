@@ -35,6 +35,8 @@ without the need to wrap it inside an if block or its own function.
 .. sourcecode:: c#
 
     if(Cast("Spell Name", () => conditions)) return;
+    
+**I'll be using Lambdas for examples here on out.**
 
 
 
@@ -49,38 +51,49 @@ Cast
     Cast(string, System.Func<bool>, ReBot.API.UnitObject)
     Cast(string, ReBot.API.UnitObject, [System.Func<bool>])
     
-----------
+----
     
-The absolute simplest way to cast a spell, call Cast with your spell name as the only argument.
+The absolute simplest way to cast a spell is to call the `Cast` method with your spell name as the only argument.  This will cast the spell on cooldown.
 
 .. sourcecode:: c#
 
     Cast("Spell Name")
-    
-C# supports something called Expression Lamdas.  This is a language sugar that allows you to wrote
-a function inline, with very little extra code.  The default rotations use lambdas heavily, so we'll go over those here.
 
-Everything after the => is evaluated and must be true or false.  This is a very simple way to do evaulation for a spell without
-the need to wrap it inside an if block.
-
-An Expression Lambda looks like this.
+With inline conditions.
 
 .. sourcecode:: c#
 
-    () => 1 + 1 == 2
+    Cast("Spell Name", () => HasAura("Some Buff"))
     
-An Expression Lamda used inside the Cast method, looks like this.
+
+CastPreventDouble
+-----------------
+
+**Definitions**
 
 .. sourcecode:: c#
 
-    Cast("Spell Name", () => HasAura("Some Buff") )
+    CastPreventDouble(string, [System.Func<bool>], [int])
+    CastPreventDouble(string, System.Func<bool>, ReBot.API.UnitObject, [int])
     
-Without Expression Lamdas, the same code would need to look like this. As you can see, its much cleaner and takes less code.
+----
+
+This function will cast a spell and prevent it from being cast again for 300ms by default or however long you set.
+For example, cast a spell and don't cast it again for 1 second.
 
 .. sourcecode:: c#
 
-    if(HasAura("Some Buff"))
-    {
-        Cast("Spell Name")
-    }
+    CastPreventDouble("Spell Name", () => conditions, 1000)
     
+CastSelf
+--------
+
+**Definitions**
+
+.. sourcecode:: c#
+
+    CastSelf(string, [System.Func<bool>])
+    
+----
+
+Exactly the same as :ref:Cast except the unit is always the player.
