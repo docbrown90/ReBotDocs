@@ -21,7 +21,7 @@ it takes up quite a few lines and could lead to very large rotation files.
 
     if(conditions)
     {
-        Cast('Spell Name');
+        Cast("Spell Name");
         return;
     }
     
@@ -34,7 +34,7 @@ without the need to wrap it inside an if block or its own function.
 
 .. sourcecode:: c#
 
-    if(Cast('Spell Name', () => conditions)) return;
+    if(Cast("Spell Name", () => conditions)) return;
 
 
 
@@ -55,7 +55,7 @@ The absolute simplest way to cast a spell, call Cast with your spell name as the
 
 .. sourcecode:: c#
 
-    Cast('Spell Name')
+    Cast("Spell Name")
     
 C# supports something called Expression Lamdas.  This is a language sugar that allows you to wrote
 a function inline, with very little extra code.  The default rotations use lambdas heavily, so we'll go over those here.
@@ -73,14 +73,14 @@ An Expression Lamda used inside the Cast method, looks like this.
 
 .. sourcecode:: c#
 
-    Cast('Spell Name', () => HasAura('Some Buff') )
+    Cast("Spell Name", () => HasAura("Some Buff") )
     
 Without Expression Lamdas, the same code would need to look like this. As you can see, its much cleaner and takes less code.
 
 .. sourcecode:: c#
 
-    if(HasAura('Some Buff'))
+    if(HasAura("Some Buff"))
     {
-        Cast('Spell Name')
+        Cast("Spell Name")
     }
     
