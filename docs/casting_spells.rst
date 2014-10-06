@@ -39,7 +39,7 @@ without the need to wrap it inside an if block or its own function.
 **I'll be using Lambdas for examples here on out.**
 
 
-.. _Cast
+.. _Cast:
 Cast
 ----
 .. sourcecode:: c#
@@ -65,9 +65,6 @@ With inline conditions.
 
 CastPreventDouble
 -----------------
-
-**Definitions**
-
 .. sourcecode:: c#
 
     CastPreventDouble(string, [System.Func<bool>], [int])
@@ -84,9 +81,6 @@ For example, cast a spell and don't cast it again for 1 second.
     
 CastSelf
 --------
-
-**Definitions**
-
 .. sourcecode:: c#
 
     CastSelf(string, [System.Func<bool>])
