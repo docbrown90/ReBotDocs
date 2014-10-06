@@ -84,25 +84,25 @@ This is where you can setup buffs and other constant values that you might need.
     {
                 
     }
-    
-    
-.. sourcecode:: c#
+
 
 This is the out of combat rotation, this will run only while out of combat. It's `bool` so you must
 return a bool value, I'm not sure what that means, the default implentation returns false, so thats what we'll do here.
+    
+    
+.. sourcecode:: c#
 
     public override bool OutOfCombat()
     {
 	    return false;
 	}
-	
-	
-.. sourcecode:: c#
 
 This is where your main combat rotation is defined.  It's a `void` so must must return nothing.  A return assumes
 you've done something that has triggerd a GCD and it will wait for the next combat pulse to run again, if you do
 not return, the bot will continue and attempt to cast the next spell defined (which is fine as long as the spell
-doesn't trigger the GCD).
+doesn't trigger the GCD).	
+	
+.. sourcecode:: c#
 
     public override void Combat()
 	{
