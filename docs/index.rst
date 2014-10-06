@@ -7,5 +7,5 @@ Welcome to docbrown's ReBot Combat API documentation.
     :maxdepth: 2
 
     getting_started
-    casting_spells
+    casting
 
