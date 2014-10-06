@@ -42,9 +42,6 @@ without the need to wrap it inside an if block or its own function.
 .. _Cast
 Cast
 ----
-
-**Definitions**
-
 .. sourcecode:: c#
 
     Cast(string, [System.Func<bool>])
