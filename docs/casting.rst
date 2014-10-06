@@ -1,5 +1,5 @@
-Casting Spells
-==============
+Casting
+=======
 
 Well, it is how the game works afterall.  ReBot provides many ways to cast a spell, covering pretty much all possible
 requirements.
