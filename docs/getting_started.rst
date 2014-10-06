@@ -3,7 +3,7 @@ Getting Started
 
 Example rotation that contains In, Out and After combat scenarios.
 
-.. code-block:: csharp
+.. sourcecode:: csharp
   using System;
   using System.Linq;
   using ReBot.API;
