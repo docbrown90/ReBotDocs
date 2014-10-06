@@ -96,4 +96,4 @@ CastSelf
     
 ----
 
-Exactly the same as :ref:Cast except the unit is always the player.
+Exactly the same as :ref:`Cast` except the unit is always the player.
