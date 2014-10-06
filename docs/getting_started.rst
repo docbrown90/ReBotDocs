@@ -9,7 +9,8 @@ Bare Rotation
 
 This is the core requirements for a rotation.
 
-.. code-block:: c#
+.. sourcecode:: c#
+
     using System;
     using System.Linq;
     using ReBot.API;
