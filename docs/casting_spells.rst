@@ -7,6 +7,8 @@ requirements.
 Casting Basics
 --------------
 
+***All cast methods require the spell name to be in English, it will be converted to the proper localized version by ReBot.***
+
 Each cast method will return true or false depending on if the spell can be casted.  If the cast did succeed and its a
 spell that triggers the GCD, you should return directly after.  This lets the bot know it should wait for the GCD to
 cast the next spell.
