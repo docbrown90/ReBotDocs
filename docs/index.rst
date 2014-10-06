@@ -7,6 +7,7 @@ Welcome to docbrown's ReBot Combat API documentation.
     :maxdepth: 2
 
     getting_started
+    base_class
     casting
     conditions
 
