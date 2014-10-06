@@ -82,7 +82,7 @@ This is where you can setup buffs and other constant values that you might need.
 
     public CustomRotation()
     {
-                
+            
     }
 
 
@@ -94,8 +94,8 @@ return a bool value, I'm not sure what that means, the default implentation retu
 
     public override bool OutOfCombat()
     {
-	    return false;
-	}
+        return false;
+    }
 
 This is where your main combat rotation is defined.  It's a `void` so must must return nothing.  A return assumes
 you've done something that has triggerd a GCD and it will wait for the next combat pulse to run again, if you do
@@ -105,8 +105,8 @@ doesn't trigger the GCD).
 .. sourcecode:: c#
 
     public override void Combat()
-	{
-		    
+    {
+        
     }
 
 
