@@ -39,7 +39,7 @@ without the need to wrap it inside an if block or its own function.
 **I'll be using Lambdas for examples here on out.**
 
 
-
+.. _cast
 Cast
 ----
 
