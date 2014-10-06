@@ -63,7 +63,7 @@ With inline conditions.
 
     Cast("Spell Name", () => HasAura("Some Buff"))
     
-
+.. _cast-prevent-double:
 CastPreventDouble
 -----------------
 .. sourcecode:: c#
@@ -89,3 +89,29 @@ CastSelf
 ----
 
 Exactly the same as :ref:`cast` except the unit is always the player.
+
+
+CastSelfPreventDouble
+---------------------
+.. sourcecode:: c#
+
+    CastSelfPreventDouble(string, [System.Func<bool>], [int])
+    
+----
+    
+Exactly the same as :ref:`cast-prevent-double` except the unit is always the player.
+
+
+CastOnTerrain
+-------------
+.. sourcecode:: c#
+
+    CastOnTerrain(string, Geometry.Vector3, [System.Func<bool>])
+    
+----
+
+Cast a spell on the terrain in the game world. See Unit Vectors for more information on this.  The below example would cast a spell directly under the player.
+
+.. sourcecode:: c#
+
+    CastOnTerrain("Spell Name", Me.Position, () => conditions)
