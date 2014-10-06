@@ -3,7 +3,7 @@ Getting Started
 
 Example rotation that contains In, Out and After combat scenarios.
 
-.. codeblock: cs
+.. codeblock:: cs
   using System;
   using System.Linq;
   using ReBot.API;
