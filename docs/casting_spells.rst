@@ -39,7 +39,8 @@ without the need to wrap it inside an if block or its own function.
 **I'll be using Lambdas for examples here on out.**
 
 
-.. _Cast:
+.. _cast:
+
 Cast
 ----
 .. sourcecode:: c#
@@ -87,4 +88,4 @@ CastSelf
     
 ----
 
-Exactly the same as :ref:`Cast` except the unit is always the player.
+Exactly the same as :ref:`cast` except the unit is always the player.
