@@ -64,6 +64,7 @@ With inline conditions.
     Cast("Spell Name", () => HasAura("Some Buff"))
     
 .. _cast-prevent-double:
+
 CastPreventDouble
 -----------------
 .. sourcecode:: c#
