@@ -40,6 +40,7 @@ Cast
 ----
 
 **Definitions**
+
 .. sourcecode:: c#
 
     Cast(string, [System.Func<bool>])
