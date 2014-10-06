@@ -8,4 +8,5 @@ Welcome to docbrown's ReBot Combat API documentation.
 
     getting_started
     casting
+    conditions
 
