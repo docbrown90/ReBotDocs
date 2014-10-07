@@ -1,3 +1,5 @@
+.. _func-cast
+
 Cast
 ====
 
