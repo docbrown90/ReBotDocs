@@ -7,5 +7,4 @@ requirements.
 .. toctree::
     :maxdepth: 2
 
-    csprimer
     cast
