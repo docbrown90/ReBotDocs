@@ -1,4 +1,4 @@
-. _func-CastSelf:
+.. _func-CastSelf:
 
 CastSelf
 ========
