@@ -1,5 +1,7 @@
+. _func-CastSelf:
+
 CastSelf
---------
+========
 
 .. sourcecode:: c#
 
@@ -7,4 +9,4 @@ CastSelf
 
 Exactly the same as ``Cast`` except the unit is always the player.
 
-See :ref:`func-cast`
+See :ref:`func-Cast`
