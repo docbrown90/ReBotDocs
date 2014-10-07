@@ -9,5 +9,6 @@ Welcome to docbrown's ReBot Combat API documentation.
     getting_started
     base_class
     casting/index
+    casting/cast
     conditions
 
