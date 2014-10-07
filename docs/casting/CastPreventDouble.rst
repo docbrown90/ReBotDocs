@@ -1,4 +1,4 @@
-.. _func-cast-prevent-double:
+.. _func-CastPreventDouble:
 
 CastPreventDouble
 =================
