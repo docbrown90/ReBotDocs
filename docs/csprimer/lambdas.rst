@@ -1,5 +1,7 @@
-C# Lambdas & How ReBot Uses Them
-================================
+.. _lambdas:
+
+Lambdas & ReBot
+===============
 
 A rotation is just a collection of conditions and the spells to cast when those conditions are met.  There are a few different
 ways to cast and return, we'll cover two basic ones here.
