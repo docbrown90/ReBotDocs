@@ -45,9 +45,9 @@ without the need to wrap it inside an if block or its own function.
 
 Cast
 ----
-.. function:: Cast(string name, [System.Func<bool> onlyCastWhen = null])
-              Cast(string name, System.Func<bool> onlyCastWhen, ReBot.API.UnitObject target)
-              Cast(string name, ReBot.API.UnitObject target, [System.Func<bool> onlyCastWhen = null])
+.. function:: Cast(name[, onlyCastWhen])
+              Cast(name, onlyCastWhen, target)
+              Cast(name, target[, onlyCastWhen])
 
 The absolute simplest way to cast a spell is to call the `Cast` method with your spell name as the only argument.  This will cast the spell on cooldown.
 
@@ -60,17 +60,14 @@ With inline conditions.
 .. sourcecode:: c#
 
     Cast("Spell Name", () => HasAura("Some Buff"))
-    
+
+
 .. _cast-prevent-double:
 
 CastPreventDouble
 -----------------
-.. sourcecode:: c#
-
-    CastPreventDouble(string, [System.Func<bool>], [int])
-    CastPreventDouble(string, System.Func<bool>, ReBot.API.UnitObject, [int])
-    
-----
+.. function:: CastPreventDouble(name[, onlyCastWhen, preventTime])
+              CastPreventDouble(name, onlyCastWhen, target[, preventTime])
 
 This function will cast a spell and prevent it from being cast again for 300ms by default or however long you set.
 For example, cast a spell and don't cast it again for 1 second.
@@ -81,20 +78,14 @@ For example, cast a spell and don't cast it again for 1 second.
     
 CastSelf
 --------
-.. sourcecode:: c#
-
-    CastSelf(string, [System.Func<bool>])
-    
-----
+.. function:: CastSelf(name[, onlyCastWhen])
 
 Exactly the same as :ref:`cast` except the unit is always the player.
 
 
 CastSelfPreventDouble
 ---------------------
-.. sourcecode:: c#
-
-    CastSelfPreventDouble(string, [System.Func<bool>], [int])
+.. function:: CastSelfPreventDouble(name[, onlyCastWhen, preventTime])
     
 ----
     
@@ -103,7 +94,7 @@ Exactly the same as :ref:`cast-prevent-double` except the unit is always the pla
 
 CastOnTerrain
 -------------
-.. function::  CastOnTerrain(string spellName, Geometry.Vector3 position, [System.Func<bool> onlyCastWhen = null])
+.. function::  CastOnTerrain(name, position[, onlyCastWhen])
 
 Cast a spell on the terrain in the game world. See Unit Vectors for more information on this.  The below example would cast a spell directly under the player.
 
