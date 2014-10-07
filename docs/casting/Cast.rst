@@ -1,4 +1,4 @@
-.. _func-cast:
+.. _func-Cast:
 
 Cast
 ====
