@@ -6,9 +6,6 @@ Welcome to docbrown's ReBot Combat API documentation.
 .. toctree::
     :maxdepth: 3
 
-    getting_started
-    base_class
+    csprimer/index
     casting/index
-    casting/cast
-    conditions
-
+    conditions/index
