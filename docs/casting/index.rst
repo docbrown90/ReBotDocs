@@ -9,3 +9,6 @@ requirements.
 
     Cast
     CastPreventDouble
+    CastSelf
+    CastSelfPreventDouble
+    CastOnTerrain
