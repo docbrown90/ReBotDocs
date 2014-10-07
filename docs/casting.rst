@@ -107,11 +107,7 @@ Exactly the same as :ref:`cast-prevent-double` except the unit is always the pla
 
 CastOnTerrain
 -------------
-.. sourcecode:: c#
-
-    CastOnTerrain(string, Geometry.Vector3, [System.Func<bool>])
-    
-----
+.. function::  CastOnTerrain(string spellName, Geometry.Vector3 position, [System.Func<bool> onlyCastWhen = null])
 
 Cast a spell on the terrain in the game world. See Unit Vectors for more information on this.  The below example would cast a spell directly under the player.
 
