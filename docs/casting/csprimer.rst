@@ -1,5 +1,7 @@
+.. _csprimer
+
 C# Primer
---------------
+=========
 
 .. warning::
     
