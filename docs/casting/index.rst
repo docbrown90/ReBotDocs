@@ -7,4 +7,5 @@ requirements.
 .. toctree::
     :maxdepth: 2
 
-    cast
+    Cast
+    CastPreventDouble
