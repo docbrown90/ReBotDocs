@@ -1,3 +1,5 @@
+.. _rebot-class:
+
 ReBot Rotation Class
 ====================
 
