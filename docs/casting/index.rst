@@ -41,3 +41,10 @@ without the need to wrap it inside an if block or its own function.
 .. note::
  
     I'll be using the lamda format for all examples.  You should use it too.
+
+
+.. toctree::
+    :maxdepth: 2
+
+    cast
+
