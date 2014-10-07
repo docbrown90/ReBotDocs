@@ -1,7 +1,9 @@
 CastSelf
 --------
 
-.. function:: CastSelf(name[, onlyCastWhen])
+.. sourcecode:: c#
+
+    CastSelf(name[, onlyCastWhen])
 
 Exactly the same as ``Cast`` except the unit is always the player.
 
