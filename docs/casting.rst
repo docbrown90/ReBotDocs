@@ -45,14 +45,10 @@ without the need to wrap it inside an if block or its own function.
 
 Cast
 ----
-.. sourcecode:: c#
+.. function:: Cast(string name, [System.Func<bool> onlyCastWhen = null])
+              Cast(string name, System.Func<bool> onlyCastWhen, ReBot.API.UnitObject target)
+              Cast(string name, ReBot.API.UnitObject target, [System.Func<bool> onlyCastWhen = null])
 
-    Cast(string, [System.Func<bool>])
-    Cast(string, System.Func<bool>, ReBot.API.UnitObject)
-    Cast(string, ReBot.API.UnitObject, [System.Func<bool>])
-    
-----
-    
 The absolute simplest way to cast a spell is to call the `Cast` method with your spell name as the only argument.  This will cast the spell on cooldown.
 
 .. sourcecode:: c#
