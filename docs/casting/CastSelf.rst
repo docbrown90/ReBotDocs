@@ -5,4 +5,4 @@ CastSelf
 
 Exactly the same as `Cast` except the unit is always the player.
 
-:see:`func-cast`
+:ref:`func-cast`
