@@ -44,7 +44,7 @@ without the need to wrap it inside an if block or its own function.
 
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
 
     cast
 
